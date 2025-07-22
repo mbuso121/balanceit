@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Request a Quote - BalanceIT</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--  Navigation -->
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="quote.html">Quote</a>
+    <a href="contact.html">Contact</a>
+    <a href="blog.html">Blog</a>
+
+
+  </div>
+
+  <!--  Quote Form -->
+  <div class="content">
+    <h1>Request a Free Quote</h1>
+    <p>Tell us what you need, and we’ll get back to you with a personalized quote.</p>
+
+    <form action="https://formsubmit.co/info@balanceit.africa" method="POST">
+      <input type="text" name="name" required placeholder="Full Name">
+      <input type="email" name="email" required placeholder="Email Address">
+      <input type="text" name="phone" placeholder="Phone Number">
+
+      <select name="service" required>
+        <option value="">Select Service</option>
+        <option value="Website Design">Website Design</option>
+        <option value="Mobile App Development">Mobile App Development</option>
+        <option value="Hosting & Domain">Hosting</option>
+        <option value="Branding & Design">Branding & Design</option>
+      </select>
+
+      <select name="budget">
+        <option value="">Select Budget</option>
+        <option value="Less than R1,000">Less than R1,000</option>
+        <option value="R1,000 - R5,000">R1,000 - R5,000</option>
+        <option value="R5,000 - R10,000">R5,000 - R10,000</option>
+        <option value="R10,000+">R10,000+</option>
+      </select>
+
+      <textarea name="details" rows="5" required placeholder="Describe your project..."></textarea>
+
+      <!--  Hidden config -->
+      <input type="hidden" name="_subject" value="New Quote Request via BalanceIT">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="thankyou.html">
+
+      <button type="submit">Submit Quote</button>
+    </form>
+  </div>
+
+  <!--  WhatsApp Floating Button -->
+  <a href="https://wa.me/27798645761" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!--  Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-social">
+        <h3>Follow Us:</h3>
+        <a href="https://www.facebook.com/balance.i.t" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/balance1i.t" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@balance.i.t" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h3>Info Links</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="howwework.html">How We Work</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact Details</h3>
+          <p><i class="fas fa-envelope"></i> info@balanceit.africa</p>
+          <p><i class="fas fa-phone"></i> 079 864 5761</p>
+          <p><i class="fas fa-map-marker-alt"></i> 999 Wolfaardt Ave, Daspoort, Pretoria</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
